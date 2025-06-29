@@ -3,51 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Liga NEL - Inicio</title>
+  <title>Liga NEL - Início</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="particles-js"></div>
 
-  <!-- Título no canto superior direito -->
-  <div class="header-title">La Liga NEL ⚽</div>
+  <!-- Logo no canto superior direito -->
+  <div class="header-logo">
+    <img src="49265120-azul-coroa-desenho-animado-ilustracao-gratis-vetor-removebg-preview.png" alt="Logo Liga" />
+  </div>
 
   <div class="container">
     <div class="buttons">
 
       <div class="center-buttons">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDIrvDNAIcsJ7Rv0Lmzk-z1tBTNmk349swN0aW-vDdSgxRaw/viewform?usp=dialog" target="_blank" class="btn neon main">Inscrever Seu Time 📜</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDIrvDNAIcsJ7Rv0Lmzk-z1tBTNmk349swN0aW-vDdSgxRaw/viewform?usp=dialog" target="_blank" class="btn neon main">
+          Inscrever Seu Time 📜
+        </a>
       </div>
 
       <div class="right-buttons">
         <a href="https://www.tiktok.com/@wiltz.yrx" target="_blank">
-          <img src="Tiktok.png" alt="TikTok" class="icon" />
+          <img src="tiktok.png" alt="TikTok" class="icon" />
         </a>
       </div>
+
     </div>
 
     <!-- Caixa de Logs -->
-    <div class="logs-box">
+    <div class="logs-box" id="logsBox">
       <div class="logs-header">Logs</div>
       <div class="logs-content">
         <p>19/06/2025: Início Aos Planos</p>
         <p>20/06/2025: Abertura Ao Site</p>
+        <p>29/06/2025: Nome Da Liga Foi Alterado</p>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="scripts.js"></script>
-
-  <!-- Caixa de Owners -->
+    <!-- Caixa de Owners -->
     <div class="owners-box" id="ownersBox">
-         <div class="logs-header">Owners:</div>
+      <div class="logs-header">Owners:</div>
       <div class="logs-content">
         <p>- Wiltz EGO</p>
         <p>- YutaBlox</p>
         <p>- IuhDelas</p>
+      </div>
     </div>
-</div>
 
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="scripts.js"></script>
+
+  <!-- LiveChat -->
+  <script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 19215163;
+    window.__lc.integration_name = "manual_onboarding";
+    window.__lc.product_name = "livechat";
+    (function(n,t,c){
+      function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}
+      var e={_q:[],_h:null,_v:"2.0",
+      on:function(){i(["on",c.call(arguments)])},
+      once:function(){i(["once",c.call(arguments)])},
+      off:function(){i(["off",c.call(arguments)])},
+      get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},
+      call:function(){i(["call",c.call(arguments)])},
+      init:function(){
+        var n=t.createElement("script");
+        n.async=!0,n.type="text/javascript",
+        n.src="https://cdn.livechatinc.com/tracking.js",
+        t.head.appendChild(n)
+      }};
+      !n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e
+    }(window,document,[].slice))
+  </script>
+  <noscript>
+    <a href="https://www.livechat.com/chat-with/19215163/" rel="nofollow">Chat with us</a>, powered by
+    <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+  </noscript>
 </body>
 </html>
